@@ -37,7 +37,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#005BFF]">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50">
         <div className="container mx-auto px-6 py-4">

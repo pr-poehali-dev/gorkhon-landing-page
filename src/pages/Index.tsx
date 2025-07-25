@@ -64,8 +64,8 @@ const Index = () => {
                     onClick={() => scrollToSection(item.id)}
                     className={`px-4 py-2 rounded-full transition-all duration-300 text-sm font-medium ${
                       activeSection === item.id
-                        ? 'bg-primary text-white shadow-lg'
-                        : 'text-gray-700 hover:text-primary hover:bg-white/20'
+                        ? 'bg-[#F1117E] text-white shadow-lg'
+                        : 'text-gray-700 hover:text-[#F1117E] hover:bg-white/20'
                     }`}
                   >
                     {item.label}
@@ -120,7 +120,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-gray-50">
+      <section id="about" className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -142,8 +142,8 @@ const Index = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-[#005BFF]/10 p-3 rounded-lg">
-                    <Icon name="Video" className="text-[#005BFF]" size={24} />
+                  <div className="bg-[#F1117E]/10 p-3 rounded-lg">
+                    <Icon name="Video" className="text-[#F1117E]" size={24} />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Видеопроизводство</h3>
@@ -162,8 +162,8 @@ const Index = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-[#005BFF]/10 p-3 rounded-lg">
-                    <Icon name="Mic" className="text-[#005BFF]" size={24} />
+                  <div className="bg-[#F1117E]/10 p-3 rounded-lg">
+                    <Icon name="Mic" className="text-[#F1117E]" size={24} />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Подкасты</h3>
@@ -190,8 +190,8 @@ const Index = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <CardHeader>
-                  <div className="w-full h-48 bg-[#005BFF]/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon name="Film" size={48} className="text-[#005BFF]" />
+                  <div className="w-full h-48 bg-[#F1117E]/10 rounded-lg flex items-center justify-center mb-4">
+                    <Icon name="Film" size={48} className="text-[#F1117E]" />
                   </div>
                   <CardTitle className="text-xl">Документальный фильм "Горхон: История поселка"</CardTitle>
                 </CardHeader>
@@ -199,7 +199,7 @@ const Index = () => {
                   <CardDescription>
                     Полнометражный документальный фильм о истории основания и развития поселка Горхон
                   </CardDescription>
-                  <Button className="mt-4 w-full bg-[#005BFF] hover:bg-[#005BFF]/90">
+                  <Button className="mt-4 w-full bg-[#F1117E] hover:bg-[#F1117E]/90">
                     Подробнее
                   </Button>
                 </CardContent>
@@ -224,8 +224,8 @@ const Index = () => {
               
               <Card className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <CardHeader>
-                  <div className="w-full h-48 bg-[#005BFF]/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon name="Image" size={48} className="text-[#005BFF]" />
+                  <div className="w-full h-48 bg-[#F1117E]/10 rounded-lg flex items-center justify-center mb-4">
+                    <Icon name="Image" size={48} className="text-[#F1117E]" />
                   </div>
                   <CardTitle className="text-xl">Фотопроект "Четыре сезона"</CardTitle>
                 </CardHeader>
@@ -254,8 +254,8 @@ const Index = () => {
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
-                <div className="bg-[#005BFF]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Mail" className="text-[#005BFF]" size={24} />
+                <div className="bg-[#F1117E]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Mail" className="text-[#F1117E]" size={24} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
                 <p className="text-gray-600">media@gorhon.ru</p>
@@ -270,8 +270,8 @@ const Index = () => {
               </div>
               
               <div className="text-center">
-                <div className="bg-[#005BFF]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="MapPin" className="text-[#005BFF]" size={24} />
+                <div className="bg-[#F1117E]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="MapPin" className="text-[#F1117E]" size={24} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Адрес</h3>
                 <p className="text-gray-600">п. Горхон, Республика Бурятия</p>
@@ -284,7 +284,7 @@ const Index = () => {
                 Мы ищем талантливых людей для расширения нашей команды. 
                 Если вы увлекаются видеосъемкой, фотографией, монтажом или журналистикой - напишите нам!
               </p>
-              <Button className="bg-[#005BFF] hover:bg-[#005BFF]/90 text-white px-8 py-3 text-lg rounded-full">
+              <Button className="bg-[#F1117E] hover:bg-[#F1117E]/90 text-white px-8 py-3 text-lg rounded-full">
                 Написать нам
                 <Icon name="Send" className="ml-2" size={20} />
               </Button>

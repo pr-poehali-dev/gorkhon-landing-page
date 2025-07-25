@@ -88,13 +88,13 @@ const Index = () => {
         {/* Glass Panel */}
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-12 shadow-2xl">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-[#005BFF]">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white">
               ГОРХОН
             </h1>
-            <p className="text-2xl md:text-3xl text-gray-700 mb-8 font-light">
+            <p className="text-2xl md:text-3xl text-white/90 mb-8 font-light">
               Медиакоманда поселка Горхон
             </p>
-            <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+            <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto">
               Мы создаем качественный контент, рассказываем истории нашего поселка 
               и помогаем местному сообществу развиваться через медиатехнологии
             </p>
@@ -102,7 +102,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 onClick={() => scrollToSection('projects')}
-                className="bg-[#005BFF] hover:bg-[#005BFF]/90 text-white px-8 py-3 text-lg rounded-full"
+                className="bg-white text-[#005BFF] hover:bg-white/90 px-8 py-3 text-lg rounded-full font-semibold"
               >
                 Наши проекты
                 <Icon name="ArrowRight" className="ml-2" size={20} />

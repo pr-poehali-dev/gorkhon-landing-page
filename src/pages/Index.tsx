@@ -40,7 +40,7 @@ const Index = () => {
     <div className="min-h-screen bg-[#005BFF]">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 bottom-0 z-50 w-20">
-        <div className="bg-white/5 backdrop-blur-md border border-white/10 h-full px-4 py-8 shadow-lg rounded-3xl m-4 mr-0">
+        <div className="bg-white/20 backdrop-blur-xl border border-white/30 h-full px-4 py-8 shadow-xl rounded-3xl m-4 mr-0">
           <div className="flex flex-col h-full">
             <div className="flex items-center justify-center mb-12">
               <img 
@@ -62,8 +62,8 @@ const Index = () => {
                   onClick={() => scrollToSection(item.id)}
                   className={`p-4 rounded-full transition-all duration-300 flex items-center justify-center ${
                     activeSection === item.id
-                      ? 'bg-[#F1117E]/20 text-[#F1117E] shadow-lg'
-                      : 'text-[#F1117E]/70 hover:text-[#F1117E] hover:bg-[#F1117E]/10'
+                      ? 'bg-[#F1117E] text-white shadow-lg'
+                      : 'text-white hover:text-[#F1117E] hover:bg-white/20'
                   }`}
                 >
                   <Icon name={item.icon} size={24} />

@@ -40,7 +40,7 @@ const Index = () => {
     <div className="min-h-screen bg-[#005BFF]">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 bottom-0 z-50 w-64">
-        <div className="bg-white/20 backdrop-blur-xl border-r border-white/30 h-full px-6 py-8 shadow-2xl rounded-r-3xl">
+        <div className="bg-white/10 backdrop-blur-2xl border border-white/20 h-full px-6 py-8 shadow-2xl rounded-3xl m-4 mr-0">
           <div className="flex flex-col h-full">
             <div className="flex items-center space-x-3 mb-12">
               <img 

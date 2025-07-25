@@ -77,10 +77,14 @@ const Index = () => {
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden ml-64">
-        {/* Liquid Glass Background */}
-        <div className="absolute inset-0 bg-white">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#005BFF]/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#F1117E]/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://cdn.poehali.dev/files/d05bf2a2-dfec-4e04-8e52-cc9d9843564b.png)'
+          }}
+        >
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
         
         {/* Glass Panel */}

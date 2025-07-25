@@ -71,10 +71,6 @@ const Index = () => {
                 </button>
               ))}
             </div>
-            
-            <div className="w-10 h-10 bg-white/30 rounded-full flex items-center justify-center">
-              <Icon name="User" size={20} className="text-gray-700" />
-            </div>
           </div>
         </div>
       </nav>

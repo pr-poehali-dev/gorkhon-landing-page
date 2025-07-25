@@ -46,28 +46,28 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/files/7635eb8c-18ab-46a9-8b2e-849843df2e55.png" 
                 alt="Горхон"
-                className="h-10 w-auto"
+                className="h-10 w-auto brightness-0 invert"
               />
               <span className="text-white font-bold text-xl">Горхон</span>
             </div>
             
             <div className="flex flex-col space-y-4 flex-1">
               {[
-                { id: 'home', label: 'Главная' },
-                { id: 'about', label: 'О команде' },
-                { id: 'projects', label: 'Проекты' },
-                { id: 'contact', label: 'Контакты' }
+                { id: 'home', icon: 'Home' },
+                { id: 'about', icon: 'Users' },
+                { id: 'projects', icon: 'FolderOpen' },
+                { id: 'contact', icon: 'Mail' }
               ].map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-6 py-3 rounded-full transition-all duration-300 text-left font-medium ${
+                  className={`p-4 rounded-full transition-all duration-300 flex items-center justify-center ${
                     activeSection === item.id
                       ? 'bg-[#F1117E] text-white shadow-lg'
                       : 'text-white/80 hover:text-white hover:bg-white/10'
                   }`}
                 >
-                  {item.label}
+                  <Icon name={item.icon} size={24} />
                 </button>
               ))}
             </div>

@@ -39,9 +39,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
-        <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-full px-8 py-4 shadow-2xl">
-          <div className="flex items-center space-x-8">
+      <nav className="fixed top-0 left-0 right-0 z-50">
+        <div className="bg-white/20 backdrop-blur-xl border-b border-white/20 px-8 py-4 shadow-lg">
+          <div className="container mx-auto flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <img 
                 src="https://cdn.poehali.dev/files/7635eb8c-18ab-46a9-8b2e-849843df2e55.png" 

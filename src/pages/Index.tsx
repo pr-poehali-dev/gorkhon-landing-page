@@ -80,16 +80,15 @@ const Index = () => {
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Liquid Glass Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/10 to-transparent">
-          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/30 to-secondary/20"></div>
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-secondary/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+        <div className="absolute inset-0 bg-white">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#005BFF]/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#F1117E]/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
         </div>
         
         {/* Glass Panel */}
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-12 shadow-2xl">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-[#005BFF]">
               ГОРХОН
             </h1>
             <p className="text-2xl md:text-3xl text-gray-700 mb-8 font-light">
@@ -103,7 +102,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 onClick={() => scrollToSection('projects')}
-                className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg rounded-full"
+                className="bg-[#005BFF] hover:bg-[#005BFF]/90 text-white px-8 py-3 text-lg rounded-full"
               >
                 Наши проекты
                 <Icon name="ArrowRight" className="ml-2" size={20} />
@@ -111,7 +110,7 @@ const Index = () => {
               <Button 
                 onClick={() => scrollToSection('contact')}
                 variant="outline"
-                className="border-secondary text-secondary hover:bg-secondary/10 px-8 py-3 text-lg rounded-full"
+                className="border-[#F1117E] text-[#F1117E] hover:bg-[#F1117E]/10 px-8 py-3 text-lg rounded-full"
               >
                 Связаться с нами
               </Button>
@@ -143,8 +142,8 @@ const Index = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <Icon name="Video" className="text-primary" size={24} />
+                  <div className="bg-[#005BFF]/10 p-3 rounded-lg">
+                    <Icon name="Video" className="text-[#005BFF]" size={24} />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Видеопроизводство</h3>
@@ -153,8 +152,8 @@ const Index = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-secondary/10 p-3 rounded-lg">
-                    <Icon name="Camera" className="text-secondary" size={24} />
+                  <div className="bg-[#F1117E]/10 p-3 rounded-lg">
+                    <Icon name="Camera" className="text-[#F1117E]" size={24} />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Фотография</h3>
@@ -163,8 +162,8 @@ const Index = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <Icon name="Mic" className="text-primary" size={24} />
+                  <div className="bg-[#005BFF]/10 p-3 rounded-lg">
+                    <Icon name="Mic" className="text-[#005BFF]" size={24} />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Подкасты</h3>
@@ -191,8 +190,8 @@ const Index = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <CardHeader>
-                  <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                    <Icon name="Film" size={48} className="text-primary" />
+                  <div className="w-full h-48 bg-[#005BFF]/10 rounded-lg flex items-center justify-center mb-4">
+                    <Icon name="Film" size={48} className="text-[#005BFF]" />
                   </div>
                   <CardTitle className="text-xl">Документальный фильм "Горхон: История поселка"</CardTitle>
                 </CardHeader>
@@ -200,7 +199,7 @@ const Index = () => {
                   <CardDescription>
                     Полнометражный документальный фильм о истории основания и развития поселка Горхон
                   </CardDescription>
-                  <Button className="mt-4 w-full bg-primary hover:bg-primary/90">
+                  <Button className="mt-4 w-full bg-[#005BFF] hover:bg-[#005BFF]/90">
                     Подробнее
                   </Button>
                 </CardContent>
@@ -208,8 +207,8 @@ const Index = () => {
               
               <Card className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <CardHeader>
-                  <div className="w-full h-48 bg-gradient-to-br from-secondary/20 to-primary/20 rounded-lg flex items-center justify-center mb-4">
-                    <Icon name="Headphones" size={48} className="text-secondary" />
+                  <div className="w-full h-48 bg-[#F1117E]/10 rounded-lg flex items-center justify-center mb-4">
+                    <Icon name="Headphones" size={48} className="text-[#F1117E]" />
                   </div>
                   <CardTitle className="text-xl">Подкаст "Голоса Горхона"</CardTitle>
                 </CardHeader>
@@ -217,7 +216,7 @@ const Index = () => {
                   <CardDescription>
                     Еженедельный подкаст с интервью жителей поселка о их жизни, традициях и планах
                   </CardDescription>
-                  <Button className="mt-4 w-full bg-secondary hover:bg-secondary/90">
+                  <Button className="mt-4 w-full bg-[#F1117E] hover:bg-[#F1117E]/90">
                     Слушать
                   </Button>
                 </CardContent>
@@ -225,8 +224,8 @@ const Index = () => {
               
               <Card className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <CardHeader>
-                  <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                    <Icon name="Image" size={48} className="text-primary" />
+                  <div className="w-full h-48 bg-[#005BFF]/10 rounded-lg flex items-center justify-center mb-4">
+                    <Icon name="Image" size={48} className="text-[#005BFF]" />
                   </div>
                   <CardTitle className="text-xl">Фотопроект "Четыре сезона"</CardTitle>
                 </CardHeader>
@@ -234,7 +233,7 @@ const Index = () => {
                   <CardDescription>
                     Фотографическая летопись Горхона через все времена года - природа и люди
                   </CardDescription>
-                  <Button className="mt-4 w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90">
+                  <Button className="mt-4 w-full bg-[#F1117E] hover:bg-[#F1117E]/90">
                     Смотреть
                   </Button>
                 </CardContent>
@@ -255,24 +254,24 @@ const Index = () => {
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Mail" className="text-primary" size={24} />
+                <div className="bg-[#005BFF]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Mail" className="text-[#005BFF]" size={24} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
                 <p className="text-gray-600">media@gorhon.ru</p>
               </div>
               
               <div className="text-center">
-                <div className="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Phone" className="text-secondary" size={24} />
+                <div className="bg-[#F1117E]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Phone" className="text-[#F1117E]" size={24} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Телефон</h3>
                 <p className="text-gray-600">+7 (XXX) XXX-XX-XX</p>
               </div>
               
               <div className="text-center">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="MapPin" className="text-primary" size={24} />
+                <div className="bg-[#005BFF]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="MapPin" className="text-[#005BFF]" size={24} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Адрес</h3>
                 <p className="text-gray-600">п. Горхон, Республика Бурятия</p>
@@ -285,7 +284,7 @@ const Index = () => {
                 Мы ищем талантливых людей для расширения нашей команды. 
                 Если вы увлекаются видеосъемкой, фотографией, монтажом или журналистикой - напишите нам!
               </p>
-              <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-8 py-3 text-lg rounded-full">
+              <Button className="bg-[#005BFF] hover:bg-[#005BFF]/90 text-white px-8 py-3 text-lg rounded-full">
                 Написать нам
                 <Icon name="Send" className="ml-2" size={20} />
               </Button>

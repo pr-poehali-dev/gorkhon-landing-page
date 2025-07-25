@@ -39,19 +39,19 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-[#005BFF]">
       {/* Navigation */}
-      <nav className="fixed top-6 left-6 z-50">
-        <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-full px-6 py-4 shadow-2xl">
-          <div className="flex flex-col items-center space-y-6">
-            <div className="flex items-center space-x-3">
+      <nav className="fixed top-0 left-0 bottom-0 z-50 w-64">
+        <div className="bg-white/20 backdrop-blur-xl border-r border-white/30 h-full px-6 py-8 shadow-2xl rounded-r-3xl">
+          <div className="flex flex-col h-full">
+            <div className="flex items-center space-x-3 mb-12">
               <img 
                 src="https://cdn.poehali.dev/files/7635eb8c-18ab-46a9-8b2e-849843df2e55.png" 
                 alt="Горхон"
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
-              <span className="text-gray-800 font-semibold text-lg">Горхон</span>
+              <span className="text-white font-bold text-xl">Горхон</span>
             </div>
             
-            <div className="flex flex-col items-center space-y-3">
+            <div className="flex flex-col space-y-4 flex-1">
               {[
                 { id: 'home', label: 'Главная' },
                 { id: 'about', label: 'О команде' },
@@ -61,10 +61,10 @@ const Index = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-4 py-2 rounded-full transition-all duration-300 text-sm font-medium whitespace-nowrap ${
+                  className={`px-6 py-3 rounded-full transition-all duration-300 text-left font-medium ${
                     activeSection === item.id
                       ? 'bg-[#F1117E] text-white shadow-lg'
-                      : 'text-gray-700 hover:text-[#F1117E] hover:bg-white/20'
+                      : 'text-white/80 hover:text-white hover:bg-white/10'
                   }`}
                 >
                   {item.label}
@@ -76,7 +76,7 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden ml-64">
         {/* Liquid Glass Background */}
         <div className="absolute inset-0 bg-white">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#005BFF]/20 rounded-full blur-3xl animate-pulse"></div>
@@ -118,7 +118,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-white">
+      <section id="about" className="py-24 bg-white ml-64">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -175,7 +175,7 @@ const Index = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-24 bg-white">
+      <section id="projects" className="py-24 bg-white ml-64">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -242,7 +242,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-gray-50">
+      <section id="contact" className="py-24 bg-gray-50 ml-64">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-5xl font-bold mb-6 text-gray-900">Свяжитесь с нами</h2>
@@ -292,7 +292,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gray-900 text-white py-12 ml-64">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">

@@ -39,39 +39,37 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-[#005BFF]">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50">
-        <div className="container mx-auto px-6 py-4">
-          <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-full px-8 py-4 shadow-2xl">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-3">
-                <img 
-                  src="https://cdn.poehali.dev/files/7635eb8c-18ab-46a9-8b2e-849843df2e55.png" 
-                  alt="Горхон"
-                  className="h-8 w-auto"
-                />
-                <span className="text-gray-800 font-semibold text-lg">Горхон</span>
-              </div>
-              
-              <div className="flex items-center space-x-6">
-                {[
-                  { id: 'home', label: 'Главная' },
-                  { id: 'about', label: 'О команде' },
-                  { id: 'projects', label: 'Проекты' },
-                  { id: 'contact', label: 'Контакты' }
-                ].map((item) => (
-                  <button
-                    key={item.id}
-                    onClick={() => scrollToSection(item.id)}
-                    className={`px-4 py-2 rounded-full transition-all duration-300 text-sm font-medium ${
-                      activeSection === item.id
-                        ? 'bg-[#F1117E] text-white shadow-lg'
-                        : 'text-gray-700 hover:text-[#F1117E] hover:bg-white/20'
-                    }`}
-                  >
-                    {item.label}
-                  </button>
-                ))}
-              </div>
+      <nav className="fixed top-6 left-6 z-50">
+        <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-full px-6 py-4 shadow-2xl">
+          <div className="flex flex-col items-center space-y-6">
+            <div className="flex items-center space-x-3">
+              <img 
+                src="https://cdn.poehali.dev/files/7635eb8c-18ab-46a9-8b2e-849843df2e55.png" 
+                alt="Горхон"
+                className="h-8 w-auto"
+              />
+              <span className="text-gray-800 font-semibold text-lg">Горхон</span>
+            </div>
+            
+            <div className="flex flex-col items-center space-y-3">
+              {[
+                { id: 'home', label: 'Главная' },
+                { id: 'about', label: 'О команде' },
+                { id: 'projects', label: 'Проекты' },
+                { id: 'contact', label: 'Контакты' }
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`px-4 py-2 rounded-full transition-all duration-300 text-sm font-medium whitespace-nowrap ${
+                    activeSection === item.id
+                      ? 'bg-[#F1117E] text-white shadow-lg'
+                      : 'text-gray-700 hover:text-[#F1117E] hover:bg-white/20'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
             </div>
           </div>
         </div>

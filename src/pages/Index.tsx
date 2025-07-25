@@ -39,16 +39,15 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-[#005BFF]">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 bottom-0 z-50 w-64">
-        <div className="bg-white/10 backdrop-blur-2xl border border-white/20 h-full px-6 py-8 shadow-2xl rounded-3xl m-4 mr-0">
+      <nav className="fixed top-0 left-0 bottom-0 z-50 w-20">
+        <div className="bg-white/10 backdrop-blur-2xl border border-white/20 h-full px-4 py-8 shadow-2xl rounded-3xl m-4 mr-0">
           <div className="flex flex-col h-full">
-            <div className="flex items-center space-x-3 mb-12">
+            <div className="flex items-center justify-center mb-12">
               <img 
                 src="https://cdn.poehali.dev/files/7635eb8c-18ab-46a9-8b2e-849843df2e55.png" 
                 alt="Горхон"
-                className="h-10 w-auto brightness-0 invert"
+                className="h-10 w-auto"
               />
-              <span className="text-white font-bold text-xl">Горхон</span>
             </div>
             
             <div className="flex flex-col space-y-4 flex-1">
@@ -76,7 +75,7 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden ml-64">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden ml-28">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -122,7 +121,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-white ml-64">
+      <section id="about" className="py-24 bg-white ml-28">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -179,7 +178,7 @@ const Index = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-24 bg-white ml-64">
+      <section id="projects" className="py-24 bg-white ml-28">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -246,7 +245,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-gray-50 ml-64">
+      <section id="contact" className="py-24 bg-gray-50 ml-28">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-5xl font-bold mb-6 text-gray-900">Свяжитесь с нами</h2>
